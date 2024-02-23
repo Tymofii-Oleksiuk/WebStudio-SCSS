@@ -1,0 +1,46 @@
+.occupation {
+    padding-bottom: 94px;
+}
+
+.occupation-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: auto;
+}
+
+
+.occupation-item {
+    position: relative;
+}
+
+.occupation-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: #212121;
+}
+
+.occupation-name {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.occupation-mini-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    top: 223px;
+    padding: 27px 0;
+    background: rgba(47, 48, 58, 0.80);
+}

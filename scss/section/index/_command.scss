@@ -1,0 +1,102 @@
+.command {
+    padding: 94px 0px;
+    background: #F5F4FA;
+}
+
+.command-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.comannd {
+    background: #F5F4FA;
+}
+
+.command-title {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.command-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #212121;
+}
+
+.command-img {
+    width: 270px;
+    height: 260px;
+}
+
+.command-article {
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.command-discription {
+    display: flex;
+    padding: 10px 0 16px 0;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #757575;
+}
+
+.icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.icon-link,
+.command-icon {
+    display: block;
+}
+
+.icon-link {
+    border-radius: 50%;
+    padding: 12px;
+    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.command-icon {
+    fill: #757575;
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover .command-icon {
+    fill: white;
+}
+
+.icon-link:focus .command-icon {
+    fill: white;
+}
+
+.icon-link:hover {
+    background-color: #2196F3;
+}
+
+.icon-link:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+}
