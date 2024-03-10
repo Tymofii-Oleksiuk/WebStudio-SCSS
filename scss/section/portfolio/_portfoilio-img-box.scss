@@ -1,10 +1,31 @@
-.img-list {
+.portfolio__img__focus {
+    display: block;
+    border: 1px solid #EEE;
+    background: #FFF;
+    width: 370px;
+    height: 404px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__img__focus:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__img__focus:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__img__vew {
+    width: 368px;
+}
+
+.portfolio__img__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.portfolio-title {
+.portfolio__title {
     margin-top: 20px;
     font-weight: 700;
     font-size: 18px;
@@ -13,14 +34,16 @@
     margin-left: 24px;
 }
 
-.portfolio-discription {
+.portfolio__discription {
+    margin-bottom: 20px;
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
     margin-left: 24px;
 }
 
-.img-overlay {
+.img__overlay {
     position: relative;
     width: 370px;
     height: 294px;
@@ -39,15 +62,15 @@
     transition: transform 250ms ease-in-out;
 }
 
-.img-focus:hover .overlay {
+.portfolio__img__focus:hover .overlay {
     transform: translatey(0);
 }
 
-.img-focus:focus .overlay {
+.portfolio__img__focus:focus .overlay {
     transform: translatey(0);
 }
 
-.overlay-text {
+.overlay__text {
     color: #FFF;
     font-family: Roboto;
     font-size: 18px;
@@ -57,6 +80,6 @@
     letter-spacing: 0.54px;
 }
 
-.portfolio-img-box {
+.portfolio__img__box {
     padding-bottom: 94px;
 }

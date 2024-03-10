@@ -2,7 +2,7 @@
     padding-bottom: 94px;
 }
 
-.occupation-list {
+.occupation__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -10,11 +10,11 @@
 }
 
 
-.occupation-item {
+.occupation__item {
     position: relative;
 }
 
-.occupation-title {
+.occupation__title {
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
@@ -23,7 +23,7 @@
     color: #212121;
 }
 
-.occupation-name {
+.occupation__name {
     color: #FFF;
     text-align: center;
     font-family: Roboto;
@@ -35,7 +35,7 @@
     text-transform: uppercase;
 }
 
-.occupation-mini-box {
+.occupation__mini__іbox {
     display: flex;
     justify-content: center;
     position: absolute;

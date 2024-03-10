@@ -3,18 +3,14 @@
     background: #F5F4FA;
 }
 
-.command-list {
+.command__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-.comannd {
-    background: #F5F4FA;
-}
-
-.command-title {
+.command__title {
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
@@ -25,7 +21,7 @@
     color: #212121;
 }
 
-.command-item {
+.command__name {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -36,19 +32,19 @@
     color: #212121;
 }
 
-.command-img {
+.command__img {
     width: 270px;
     height: 260px;
 }
 
-.command-article {
+.command__article {
     border-radius: 0px 0px 4px 4px;
     background: #fff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.command-discription {
+.command__discription {
     display: flex;
     padding: 10px 0 16px 0;
     flex-direction: row-reverse;
@@ -59,44 +55,44 @@
     color: #757575;
 }
 
-.icons-list {
+.icons__list {
     display: flex;
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
 }
 
-.icon-link,
-.command-icon {
+.icon__link,
+.command__icon {
     display: block;
 }
 
-.icon-link {
+.icon__link {
     border-radius: 50%;
     padding: 12px;
     transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-icon {
+.command__icon {
     fill: #757575;
     width: 20px;
     height: 20px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-link:hover .command-icon {
+.icon__link:hover .command__icon {
     fill: white;
 }
 
-.icon-link:focus .command-icon {
+.icon__link:focus .command__icon {
     fill: white;
 }
 
-.icon-link:hover {
+.icon__link:hover {
     background-color: #2196F3;
 }
 
-.icon-link:focus {
+.icon__link:focus {
     background-color: #2196F3;
     border-radius: 50%;
 }

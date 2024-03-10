@@ -11,12 +11,12 @@
     padding: 200px 0;
 }
 
-.service-box {
+.service__box {
     padding-left: 237px;
     padding-right: 237px;
 }
 
-.service-title {
+.service__title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@
     text-transform: uppercase;
 }
 
-.service-btn {
+.service__btn {
     margin: auto;
     display: flex;
     align-items: center;
