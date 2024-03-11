@@ -1,98 +1,102 @@
 .command {
     padding: 94px 0px;
     background: #F5F4FA;
-}
 
-.command__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
 
-.command__title {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
+    &__title {
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: $title-color;
+    }
 
-.command__name {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 50px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    color: #212121;
-}
+    &__name {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        color: $title-color;
+    }
 
-.command__img {
-    width: 270px;
-    height: 260px;
-}
-
-.command__article {
-    border-radius: 0px 0px 4px 4px;
-    background: #fff;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-
-.command__discription {
-    display: flex;
-    padding: 10px 0 16px 0;
-    flex-direction: row-reverse;
-    justify-content: center;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #757575;
-}
-
-.icons__list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 30px;
-}
-
-.icon__link,
-.command__icon {
-    display: block;
-}
-
-.icon__link {
-    border-radius: 50%;
-    padding: 12px;
-    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.command__icon {
-    fill: #757575;
-    width: 20px;
-    height: 20px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon__link:hover .command__icon {
-    fill: white;
-}
-
-.icon__link:focus .command__icon {
-    fill: white;
+    &__img {
+        width: 270px;
+        height: 260px;
+    }
+    
+    &__article {
+        border-radius: 0px 0px 4px 4px;
+        background: $back-color;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+    
+    &__discription {
+        display: flex;
+        padding: 10px 0 16px 0;
+        flex-direction: row-reverse;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-color;
+    }
+    
+    .icons__list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .icon__link,
+    &__icon {
+        display: block;
+    }
+    
+    .icon__link {
+        border-radius: 50%;
+        padding: 12px;
+        transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__icon {
+        fill: $text-color;
+        width: 20px;
+        height: 20px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .icon__link:hover &__icon {
+        fill: white;
+    }
+    
+    .icon__link:focus &__icon {
+        fill: white;
+    }
 }
 
 .icon__link:hover {
-    background-color: #2196F3;
+    background-color: $classic-color;
 }
 
 .icon__link:focus {
-    background-color: #2196F3;
+    background-color: $classic-color;
     border-radius: 50%;
 }
+
+
+
+

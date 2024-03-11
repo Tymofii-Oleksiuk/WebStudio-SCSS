@@ -1,65 +1,67 @@
 .details {
     padding: 94px 0;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: $title-color;
+        margin: 30px 0 10px 0;
+        margin-bottom: 10px;
+    }
+    
+    
+    &__discription {
+        color: $text-color;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+    }
+    
+    &__item::before {
+        display: block;
+        background-image: url(../img/antena.png);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        content: "";
+    }
+    
+    &__item1::before {
+        display: block;
+        background-image: url(../img/clock.png);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        content: "";
+    }
+    
+    &__item2::before {
+        display: block;
+        background-image: url(../img/service-computer.png);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        content: "";
+    }
+    
+    &__item3::before {
+        display: block;
+        background-image: url(../img/astronaut.png);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        content: "";
+    }
+    
+    
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    
 }
 
-.details__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #212121;
-    margin: 30px 0 10px 0;
-    margin-bottom: 10px;
-}
-
-
-.details__discription {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-}
-
-.details__item::before {
-    display: block;
-    background-image: url(../img/antena.png);
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    content: "";
-}
-
-.details__item1::before {
-    display: block;
-    background-image: url(../img/clock.png);
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    content: "";
-}
-
-.details__item2::before {
-    display: block;
-    background-image: url(../img/service-computer.png);
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    content: "";
-}
-
-.details__item3::before {
-    display: block;
-    background-image: url(../img/astronaut.png);
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    content: "";
-}
-
-
-.details__list {
-    display: flex;
-    gap: 30px;
-}
