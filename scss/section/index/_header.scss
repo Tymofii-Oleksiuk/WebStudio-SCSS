@@ -18,26 +18,32 @@
         width: 100%;
     }
     
-    &__list__menu {
+    &__menu {
         display: flex;
         align-items: center;
         gap: 50px;
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
     
-    &__list__info {
+    &__info {
         display: flex;
         align-items: center;
         gap: 50px;
         margin-left: auto;
+        
+        &__item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
 
-    &__item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    &__link__info {
+    &__link {
         display: flex;
         align-items: center;
     }
@@ -45,7 +51,7 @@
     &__menu {
         display: flex;
         align-items: center;
-        position: relative;
+  
     }
 
     &__text {
@@ -54,6 +60,7 @@
         line-height: 1.14;
         color: $title-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
     }
 
     &__text::after {
@@ -81,7 +88,7 @@
         color: $classic-color;
     }
     
-    &__info {
+    &__contacts{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -98,7 +105,7 @@
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__link__info:hover &__info {
+    &__link__info:hover &__contacts {
         color: $classic-color;
     }
 
@@ -106,7 +113,7 @@
         fill: $classic-color;
     }
     
-    &__link__info:focus &__info {
+    &__link__info:focus &__contacts {
         color: $classic-color;
     }
     
@@ -119,11 +126,9 @@ html:hover .your__place::after {
     opacity: 1;
 }
 
-html:hover .your__place__text {
+html:hover .your__place-text {
     color: $classic-color;
 }
-
-
 
 .portfolio__header {
     border-bottom: 1px solid #ECECEC;
@@ -149,7 +154,7 @@ html:hover .your__place__text {
 }
 
 
-.your__place__text {
+.your__place-text {
     color: $title-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

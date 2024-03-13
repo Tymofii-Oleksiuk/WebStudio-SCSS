@@ -28,7 +28,7 @@
         margin-bottom: 20px;
     }
     
-    &__list__item {
+    &__item {
         display: flex;
         align-items: center;
         font-weight: 400;
@@ -36,7 +36,7 @@
         line-height: 1.71;
     }
 
-    &__icon__list {
+    &__icons {
         display: flex;
         gap: 10px;
     }
@@ -68,13 +68,7 @@
         width: 20px;
         height: 20px;
     }
-    
-    &__mailing {
-        display: flex;
-    }
 }
-
-
 
 .mail__link {
     margin: 9px 0px;
@@ -101,71 +95,78 @@
     color: $classic-color;
 }
 
-.mailing__btn {
-    display: flex;
-    border-radius: 4px;
-    background: $classic-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 10px 28px;
-    width: 200px;
-    height: 50px;
-    margin-top: 36px;
-    margin-left: 12px;
-    cursor: pointer;
-}
-
-
-
-.mailing__title {
-    color: $back-color;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.mailing__input {
-    padding: 15px 16px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 358px;
-    height: 50px;
-}
-
-.mailing__input::placeholder {
-    color: rgba(255, 255, 255, 0.60);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.48px;
-}
-
-.mailing__btn__title {
-    color: $back-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    margin-right: 10px;
-}
-
-.mailing__icon {
-    width: 24px;
-    height: 24px;
-    fill: $back-color;
-}
-
 .white__logo {
-    color: $back-colorfff;
+    color: $back-color;
+}
+
+
+.mailing{
+
+    display: flex;
+    
+    &__btn {
+        display: flex;
+        border-radius: 4px;
+        background: $classic-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 28px;
+        width: 200px;
+        height: 50px;
+        margin-top: 36px;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+    
+    
+    
+    &__title {
+        color: $back-color;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    &__input {
+        padding: 15px 16px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 358px;
+        height: 50px;
+    }
+    
+    &__input::placeholder {
+        color: rgba(255, 255, 255, 0.60);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.48px;
+    }
+    
+    &__btn-title {
+        color: $back-color;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        margin-right: 10px;
+    }
+    
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: $back-color;
+    }
+
 }
