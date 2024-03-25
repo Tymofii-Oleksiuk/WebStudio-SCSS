@@ -16,10 +16,7 @@
     &__title {
         text-align: center;
         margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        color: $title-color;
+       @include titles();
     }
     
     &__name {

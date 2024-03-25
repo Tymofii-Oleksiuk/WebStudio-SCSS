@@ -2,10 +2,7 @@
     padding: 94px 0;
 
     &__title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $title-color;
+        @include titles($size: 14px, $height: 1.14);
         margin: 30px 0 10px 0;
         margin-bottom: 10px;
     }

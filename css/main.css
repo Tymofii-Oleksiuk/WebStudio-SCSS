@@ -40,6 +40,12 @@ input {
   margin: 0 auto;
 }
 
+.service__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   height: 80px;
 }
@@ -192,9 +198,6 @@ html:hover .your__place-text {
   padding-right: 237px;
 }
 .service__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -330,14 +333,13 @@ html:hover .your__place-text {
   gap: 30px;
 }
 .command__title {
-  display: flex;
   margin-bottom: 50px;
-  justify-content: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .command__name {
   display: flex;
@@ -438,11 +440,12 @@ html:hover .your__place-text {
   border: 1px solid #2196f3;
 }
 .customers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
   color: #212121;
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
   margin-bottom: 50px;

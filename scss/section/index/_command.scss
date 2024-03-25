@@ -10,14 +10,10 @@
     }
 
     &__title {
-        display: flex;
         margin-bottom: 50px;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        @include titles();
+        text-align: center;
         letter-spacing: 0.03em;
-        color: $title-color;
     }
 
     &__name {
@@ -25,24 +21,21 @@
         justify-content: center;
         margin-top: 30px;
         gap: 50px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        color: $title-color;
+        @include titles($size: 16px, $height: 1.18, $color: $title-color, $font-weight: 500);
     }
 
     &__img {
         width: 270px;
         height: 260px;
     }
-    
+
     &__article {
         border-radius: 0px 0px 4px 4px;
         background: $back-color;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
-    
+
     &__discription {
         display: flex;
         padding: 10px 0 16px 0;
@@ -53,36 +46,36 @@
         line-height: 19px;
         color: $text-color;
     }
-    
+
     .icons__list {
         display: flex;
         justify-content: center;
         gap: 10px;
         padding-bottom: 30px;
     }
-    
+
     .icon__link,
     &__icon {
         display: block;
     }
-    
+
     .icon__link {
         border-radius: 50%;
         padding: 12px;
         transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     &__icon {
         fill: $text-color;
         width: 20px;
         height: 20px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .icon__link:hover &__icon {
         fill: white;
     }
-    
+
     .icon__link:focus &__icon {
         fill: white;
     }
@@ -96,7 +89,3 @@
     background-color: $classic-color;
     border-radius: 50%;
 }
-
-
-
-

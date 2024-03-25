@@ -14,20 +14,15 @@
         padding-left: 237px;
         padding-right: 237px;
     }
-    
+
     &__title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        color: $back-color;
+        @extend %flex;
+        @include titles($size: 44px, $height: 1.36, $color: $back-color, $font-weight: 900);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
-    
+
     &__btn {
         margin: auto;
         display: flex;
@@ -46,4 +41,3 @@
         cursor: pointer;
     }
 }
-
