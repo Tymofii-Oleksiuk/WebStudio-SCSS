@@ -7,26 +7,58 @@
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover, cover;
-    padding: 200px 0;
+    background-size: cover;
+    padding: 118px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 116px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 
     &__box {
-        padding-left: 237px;
-        padding-right: 237px;
+        padding: 0 45px;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 170px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 0 252px;
+        }
+
     }
 
     &__title {
-        @extend %flex;
-        @include titles($size: 44px, $height: 1.36, $color: $back-color, $font-weight: 900);
+
+        @include titles($size: 26px, $height: 42px, $color: $back-color, $font-weight: 900);
         text-align: center;
-        letter-spacing: 0.06em;
+        font-family: Roboto;
+        letter-spacing: 1.56px;
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            @include titles($size: 26px, $height: 42px, $color: $back-color, $font-weight: 900);
+            text-align: center;
+            font-family: Roboto;
+            letter-spacing: 1.56px;
+            text-transform: uppercase;
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include titles($size: 44px, $height: 60px, $color: $back-color, $font-weight: 900);
+            text-align: center;
+            font-family: Roboto;
+            letter-spacing: 2.64px;
+            text-transform: uppercase;
+        }
     }
 
     &__btn {
+        @extend %flex;
         margin: auto;
-        display: flex;
-        align-items: center;
         margin-top: 30px;
         color: $back-color;
         font-family: Roboto;
@@ -34,10 +66,29 @@
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0.96px;
-        padding: 10px 32px;
+        padding: 10px 24px;
         border-radius: 4px;
         background: $classic-color;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         cursor: pointer;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1200px) {
+            margin: auto;
+            margin-top: 30px;
+            color: $back-color;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.96px;
+            padding: 10px 32px;
+            border-radius: 4px;
+            background: $classic-color;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
     }
 }
