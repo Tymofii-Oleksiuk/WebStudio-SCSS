@@ -20,6 +20,10 @@ ol {
   margin: 0%;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -73,6 +77,7 @@ input {
 @media screen and (min-width: 768px) {
   .header__nav {
     max-height: 80px;
+    gap: 88px;
   }
 }
 .header__box {
@@ -228,8 +233,8 @@ html:hover .your__place-text {
 
 .logo {
   display: flex;
-  margin-right: 93px;
   align-items: center;
+  justify-content: center;
   color: #2196f3;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -238,6 +243,12 @@ html:hover .your__place-text {
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 24px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    justify-content: start;
   }
 }
 
@@ -374,7 +385,45 @@ html:hover .your__place-text {
 }
 .footer__container {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    gap: 0;
+  }
+}
+.footer__addres-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__addres-box {
+    margin-right: 325px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__addres-box {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+.footer__icon-box {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__icon-box {
+    margin-right: 93px;
+  }
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .footer__address {
   margin-top: 20px;
@@ -386,6 +435,7 @@ html:hover .your__place-text {
   letter-spacing: 0.42px;
 }
 .footer__invation {
+  text-align: center;
   color: #FFF;
   font-family: Roboto;
   font-size: 14px;
@@ -395,12 +445,33 @@ html:hover .your__place-text {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer__invation {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__invation {
+    text-align: start;
+  }
+}
 .footer__item {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+@media screen and (min-width: 768px) {
+  .footer__item {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    justify-content: start;
+  }
 }
 .footer__icons {
   display: flex;
@@ -459,7 +530,24 @@ html:hover .your__place-text {
 }
 
 .mailing {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .mailing {
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
 }
 .mailing__btn {
   display: flex;
@@ -474,6 +562,7 @@ html:hover .your__place-text {
   cursor: pointer;
 }
 .mailing__title {
+  text-align: center;
   color: #FFF;
   font-family: Roboto;
   font-size: 14px;
@@ -483,6 +572,11 @@ html:hover .your__place-text {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__title {
+    text-align: start;
+  }
 }
 .mailing__input {
   padding: 15px 16px;

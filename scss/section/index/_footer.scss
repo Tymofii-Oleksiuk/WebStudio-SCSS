@@ -4,9 +4,46 @@
 
     &__container {
         display: flex;
+        flex-wrap: wrap;
         gap: 70px;
+
+        @media screen and (min-width: 768px) {
+            gap: 0;
+        }
     }
-    
+
+    &__addres-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 325px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon-box {
+        margin: 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
     &__address {
         margin-top: 20px;
         color: $back-color;
@@ -16,8 +53,9 @@
         line-height: 24px;
         letter-spacing: 0.42px;
     }
-    
+
     &__invation {
+        text-align: center;
         color: $back-color;
         font-family: Roboto;
         font-size: 14px;
@@ -26,26 +64,43 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
-    
+
     &__item {
         display: flex;
         align-items: center;
+        justify-content: center;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: start
+        }
     }
 
     &__icons {
         display: flex;
         gap: 10px;
     }
-    
+
     &__link,
     &__icon {
         display: block;
     }
-    
+
     &__link {
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.10);
@@ -54,15 +109,15 @@
         height: 44px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     &__link:hover {
         background: $classic-color;
     }
-    
+
     &__link:focus {
         background-color: $classic-color;
     }
-    
+
     &__icon {
         fill: white;
         width: 20px;
@@ -100,10 +155,24 @@
 }
 
 
-.mailing{
-
+.mailing {
+    margin: 0 auto;
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
     &__btn {
         display: flex;
         border-radius: 4px;
@@ -116,10 +185,11 @@
         margin-left: 12px;
         cursor: pointer;
     }
-    
-    
-    
+
+
+
     &__title {
+        text-align: center;
         color: $back-color;
         font-family: Roboto;
         font-size: 14px;
@@ -129,8 +199,12 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
-    
+
     &__input {
         padding: 15px 16px;
         border-radius: 4px;
@@ -140,7 +214,7 @@
         width: 358px;
         height: 50px;
     }
-    
+
     &__input::placeholder {
         color: rgba(255, 255, 255, 0.60);
         font-family: Roboto;
@@ -150,7 +224,7 @@
         line-height: 20px;
         letter-spacing: 0.48px;
     }
-    
+
     &__btn-title {
         color: $back-color;
         text-align: center;
@@ -162,7 +236,7 @@
         letter-spacing: 0.96px;
         margin-right: 10px;
     }
-    
+
     &__icon {
         width: 24px;
         height: 24px;

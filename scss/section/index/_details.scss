@@ -5,9 +5,14 @@
         @include titles($size: 14px, $height: 1.14);
         margin: 30px 0 10px 0;
         margin-bottom: 10px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
-    
-    
+
+
     &__discription {
         color: $text-color;
         font-family: Roboto;
@@ -17,48 +22,60 @@
         line-height: 24px;
         letter-spacing: 0.42px;
     }
-    
-    &__item::before {
-        display: block;
-        background-image: url(../img/antena.png);
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        content: "";
+
+    &__svg {
+        top: 25px;
+        left: 190px;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+
+        @media screen and (min-width: 768px) {
+            left: 142px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            left: 100px;
+        }
     }
-    
-    &__item1::before {
-        display: block;
-        background-image: url(../img/clock.png);
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        content: "";
-    }
-    
-    &__item2::before {
-        display: block;
-        background-image: url(../img/service-computer.png);
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        content: "";
-    }
-    
-    &__item3::before {
-        display: block;
-        background-image: url(../img/astronaut.png);
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        content: "";
-    }
-    
-    
+
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
     }
-    
-}
 
+    &__item {
+        width: 450px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+
+    &__item::before {
+        position: relative;
+        display: block;
+        background-color: #F5F4FA;
+        width: 450px;
+        height: 120px;
+        ;
+        border-radius: 4px;
+        content: "";
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 120px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 120px;
+        }
+    }
+
+}

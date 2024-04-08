@@ -14,6 +14,7 @@
 
         @media screen and (min-width: 768px) {
             max-height: 80px;
+            gap: 88px;
         }
     }
 
@@ -169,7 +170,7 @@ html:hover .your__place-text {
     line-height: normal;
     letter-spacing: 0.78px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         font-size: 24pxs;
     }
 }
@@ -177,15 +178,20 @@ html:hover .your__place-text {
 
 .logo {
     display: flex;
-    margin-right: 93px;
     align-items: center;
+    justify-content: center;
     color: $classic-color;
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-weight: 700;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         font-size: 24px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
     }
 }
 
