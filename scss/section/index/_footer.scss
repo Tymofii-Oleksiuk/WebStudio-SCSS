@@ -5,10 +5,11 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        gap: 70px;
+        flex-direction: column;
 
         @media screen and (min-width: 768px) {
             gap: 0;
+            flex-direction: row;
         }
     }
 
@@ -213,6 +214,14 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         width: 358px;
         height: 50px;
+
+        @media screen and (min-width: 350px) {
+            width: auto;
+        }
+
+        @media screen and (min-width: 480px) {
+            width: 358px;
+        }
     }
 
     &__input::placeholder {

@@ -26,12 +26,13 @@
 
     &__title {
         margin-bottom: 30px;
-        @include titles();
+        @include titles($size: 28px);
         text-align: center;
         letter-spacing: 0.03em;
 
         @media screen and (min-width: 1200px) {
             margin-bottom: 50px;
+            @include titles();
         }
     }
 
@@ -59,7 +60,7 @@
 
     &__discription {
         display: flex;
-        padding: 10px 0 16px 0;
+        margin: 10px 0 16px 0;
         flex-direction: row-reverse;
         justify-content: center;
         font-weight: 400;
@@ -69,6 +70,7 @@
     }
 
     &__article {
+        padding-bottom: 30px;
         border-radius: 0px 0px 4px 4px;
         background: $back-color;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -80,7 +82,6 @@
         display: flex;
         justify-content: center;
         gap: 10px;
-        padding-bottom: 30px;
     }
 
     .icon__link,

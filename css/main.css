@@ -39,10 +39,25 @@ input {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 15px;
   max-width: 480px;
   margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -532,7 +547,7 @@ html:hover .your__place-text {
 .command__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   color: #212121;
   text-align: center;
@@ -541,6 +556,10 @@ html:hover .your__place-text {
 @media screen and (min-width: 1200px) {
   .command__title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: #212121;
   }
 }
 .command__name {
@@ -570,7 +589,7 @@ html:hover .your__place-text {
 }
 .command__discription {
   display: flex;
-  padding: 10px 0 16px 0;
+  margin: 10px 0 16px 0;
   flex-direction: row-reverse;
   justify-content: center;
   font-weight: 400;
@@ -579,6 +598,7 @@ html:hover .your__place-text {
   color: #757575;
 }
 .command__article {
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -587,7 +607,6 @@ html:hover .your__place-text {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
 }
 .command .icon__link, .command__icon {
   display: block;
@@ -675,7 +694,7 @@ html:hover .your__place-text {
 }
 .customers__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   color: #212121;
   text-align: center;
@@ -687,6 +706,10 @@ html:hover .your__place-text {
 @media screen and (min-width: 1200px) {
   .customers__title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: #212121;
   }
 }
 
@@ -697,11 +720,12 @@ html:hover .your__place-text {
 .footer__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
     gap: 0;
+    flex-direction: row;
   }
 }
 .footer__addres-box {
@@ -897,6 +921,16 @@ html:hover .your__place-text {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 358px;
   height: 50px;
+}
+@media screen and (min-width: 350px) {
+  .mailing__input {
+    width: auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mailing__input {
+    width: 358px;
+  }
 }
 .mailing__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
