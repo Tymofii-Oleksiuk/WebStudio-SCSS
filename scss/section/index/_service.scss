@@ -19,7 +19,11 @@
     }
 
     &__box {
-        padding: 0 45px;
+
+
+        @media screen and (min-width: 480px) {
+            padding: 0 45px;
+        }
 
         @media screen and (min-width: 768px) {
             padding: 0 170px;
@@ -33,11 +37,16 @@
 
     &__title {
 
-        @include titles($size: 26px, $height: 42px, $color: $back-color, $font-weight: 900);
+        @include titles($size: 24px, $height: 42px, $color: $back-color, $font-weight: 900);
         text-align: center;
         font-family: Roboto;
         letter-spacing: 1.56px;
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            @include titles($size: 26px, $height: 42px, $color: $back-color, $font-weight: 900);
+        }
+
 
         @media screen and (min-width: 768px) {
             @include titles($size: 26px, $height: 42px, $color: $back-color, $font-weight: 900);

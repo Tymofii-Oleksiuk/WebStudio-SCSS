@@ -1,22 +1,25 @@
 .portfolio {
 
     &__img__focus {
+
         display: block;
         border: 1px solid #EEE;
         background: $back-color;
-        width: 450px;
-        height: 404px;
+        width: auto;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media screen and (min-width: 768px) {
-            width: 370px;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
             height: 404px;
         }
 
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
 
         @media screen and (min-width: 1200px) {
             width: 370px;
-            height: 404px;
         }
     }
 
@@ -29,10 +32,20 @@
     }
 
     &__img__vew {
-        width: 450px;
-        height: 294px;
+        width: auto;
+        height: 250px;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 294px;
+        }
 
         @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 294px;
+        }
+
+        @media screen and (min-width: 1200px) {
             width: 370px;
             height: 294px;
         }
@@ -43,24 +56,38 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+
     }
 
     &__title {
+        text-align: center;
         margin-top: 20px;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 2;
         color: $title-color;
-        margin-left: 24px;
+
+        @media screen and (min-width: 480px) {
+            text-align: start;
+            font-size: 18px;
+            margin-left: 24px;
+        }
     }
 
     &__discription {
+        text-align: center;
         margin-bottom: 20px;
         margin-top: 4px;
         font-size: 16px;
         line-height: 1.87;
         color: $text-color;
-        margin-left: 24px;
+
+
+        @media screen and (min-width: 480px) {
+            text-align: start;
+            margin-left: 24px;
+        }
     }
 
     &__img__focus:hover .overlay {
@@ -80,8 +107,11 @@
 
 .img__overlay {
     position: relative;
-    height: 294px;
     overflow: hidden;
+
+    @media screen and (min-width: 480px) {
+        height: 294px;
+    }
 }
 
 .overlay {
@@ -109,12 +139,16 @@
 }
 
 .img-item {
-    width: 450px;
-    height: 404px;
+    width: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 404px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 354px;
-        height: 404px;
+        height: 440px;
     }
 
     @media screen and (min-width: 1200px) {

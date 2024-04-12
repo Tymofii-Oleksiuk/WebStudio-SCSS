@@ -1,12 +1,29 @@
 .portfolio {
     &__btn__list {
-        display: flex;
-        gap: 8px;
-        justify-content: start;
-        flex-wrap: wrap;
+        @media screen and (min-width: 320px) {
+            display: flex;
+            gap: 8px;
+            justify-content: start;
+            flex-wrap: wrap;
+            padding: 60px 0 40px 0;
+        }
+
+        @media screen and (min-width: 480px) {
+            padding: 60px 124px 40px 0;
+            display: flex;
+            gap: 8px;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+
 
         @media screen and (min-width: 768px) {
+            padding: 60px 0 30px 0;
             justify-content: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 94px 0 48px 0;
         }
     }
 
@@ -22,7 +39,19 @@
     }
 
     &__btn__element:nth-child(1) {
-        margin-bottom: 7px;
+        
+        @media screen and (min-width: 320px) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 480px) {
+            margin-bottom: 7px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
     }
 
     &__btn__element:hover {
@@ -40,11 +69,6 @@
             0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
         cursor: pointer;
-    }
-
-    &__btn {
-        padding-top: 94px;
-        padding-bottom: 50px;
     }
 
 }
