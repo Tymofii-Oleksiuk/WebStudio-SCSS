@@ -416,7 +416,7 @@ html:hover .your__place-text {
 }
 @media screen and (min-width: 1200px) {
   .details {
-    padding: 94px;
+    padding: 94px 0;
   }
 }
 .details__title {
