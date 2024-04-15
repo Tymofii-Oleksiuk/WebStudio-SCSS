@@ -1,63 +1,84 @@
 .modal {
+    position: relative;
+    padding: 40px;
+    width: 320px;
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
     left: 50%;
     margin: 0 auto;
-    width: 528px;
-    height: 581px;
-    padding: 8px 40px 40px 40px;
     border-radius: 4px;
     background: $back-color;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-    &-close {
-        background-color: $back-color;
-        cursor: pointer;
-        margin-left: 450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.10);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
     }
-    
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
+
+
+    &-close {
+        @media screen and (min-width: 320px) {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background-color: $back-color;
+            cursor: pointer;
+            margin-left: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    }
+
     &-close:hover &-dagger {
         fill: $classic-color;
     }
-    
+
     &-close:focus &-dagger {
         fill: $classic-color;
     }
-    
+
     &-dagger {
         width: 18px;
         height: 18px;
     }
-    
+
     &-list {
         display: flex;
         flex-direction: column;
         margin-top: 12px;
         gap: 10px;
     }
-    
+
     &-title {
-        margin-top: 8px;
         text-align: center;
-        color: $title-color;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.6px;
+        font-size: 18px;
+
+        @media screen and (min-width: 480px) {
+            font-size: 20px;
+            margin-top: 2px;
+            color: $title-color;
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.6px;
+        }
     }
-    
+
     &-about {
         color: $text-color;
         font-family: Roboto;
@@ -67,11 +88,11 @@
         line-height: normal;
         letter-spacing: 0.12px;
     }
-    
+
     &-item {
         position: relative;
     }
-    
+
     &-icon {
         display: block;
         position: absolute;
@@ -81,39 +102,44 @@
         height: 18px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     &-input {
         position: relative;
         margin-top: 4px;
-        width: 448px;
+        width: 100%;
         padding: 11px 12px 11px 42px;
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 1200px) {
+            width: 448px;
+            height: 40px;
+        }
+
     }
-    
+
     &-input:hover {
         cursor: pointer;
         border: 1px solid $classic-color;
     }
-    
+
     &-input:focus {
         cursor: pointer;
         border: 1px solid $classic-color;
     }
-    
-    
-    &-input:hover+ &-icon {
+
+
+    &-input:hover+&-icon {
         fill: $classic-color;
     }
-    
-    &-input:focus+ &-icon {
+
+    &-input:focus+&-icon {
         fill: $classic-color;
     }
 
     &-send {
-        margin: 30px 124px 0 124px;
-        margin-top: 30px;
+        margin: 30px 0 0 20px;
         cursor: pointer;
         padding: 10px 52px;
         color: $back-color;
@@ -127,13 +153,21 @@
         border-radius: 4px;
         background: $classic-color;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        @media screen and (min-width: 480px) {
+            margin: 30px 0 0 85px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: 30px 0 0 124px;
+        }
     }
 }
 
 
 
 
-.review1s-about {
+.reviews-about {
     margin-top: 10px;
     color: $text-color;
     font-family: Roboto;
@@ -143,38 +177,22 @@
     line-height: normal;
     letter-spacing: 0.12px;
     margin-bottom: 4px;
-
-
-    
-    &-comment {
-        width: 448px;
-        height: 120px;
-        padding: 12px 16px 96px 16px;
-        border-radius: 4px;
-        border: 1px solid rgba(33, 33, 33, 0.20);
-        resize: none;
-    }
-    
-    &-comment::placeholder {
-        text-align: start;
-        color: rgba(117, 117, 117, 0.50);
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.12px;
-    }
 }
 
 textarea {
-    width: 448px;
+    width: 100%;
     height: 120px;
-    padding: 12px 16px 96px 16px;
+    padding: 12px 0 0 16px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 120px;
+
+    }
 }
 
 textarea:hover {
@@ -182,34 +200,65 @@ textarea:hover {
     border: 1px solid $classic-color;
 }
 
-.agreement__box {
-    display: flex;
-    justify-content: center;
-    gap: 8.38px;
-    justify-content: center;
+.agreement {
+
+    @media screen and (min-width: 320px) {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 8.38px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 25px;
+    }
+
+    &__title {
+        margin-top: 5px;
+
+        @media screen and (min-width: 480px) {
+            margin-top: 0;
+        }
+    }
+
 
     &__text {
         color: $text-color;
         font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.42px;
-        text-align: center;
+
+        @media screen and (min-width: 320px) {
+            line-height: 24px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
     }
-    
+
     &__link {
-        cursor: pointer;
-        text-decoration: solid;
-        color: $classic-color;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.42px;
-        text-decoration-line: underline;
+        @media screen and (min-width: 320px) {
+            cursor: pointer;
+            text-decoration: solid;
+            color: $classic-color;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.42px;
+            text-decoration-line: underline;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
     }
 }
 
+.agreement-title {
+    margin-top: 5px;
+}

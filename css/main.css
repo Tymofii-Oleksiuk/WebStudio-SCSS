@@ -1055,30 +1055,47 @@ html:hover .your__place-text {
 }
 
 .modal {
+  position: relative;
+  padding: 40px;
+  width: 320px;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0 auto;
-  width: 528px;
-  height: 581px;
-  padding: 8px 40px 40px 40px;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.modal-close {
-  background-color: #FFF;
-  cursor: pointer;
-  margin-left: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #FFF;
+    cursor: pointer;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .modal-close:hover .modal-dagger {
   fill: #2196f3;
@@ -1097,16 +1114,21 @@ html:hover .your__place-text {
   gap: 10px;
 }
 .modal-title {
-  margin-top: 8px;
   text-align: center;
-  color: #212121;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.6px;
+  font-size: 18px;
+}
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+    margin-top: 2px;
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
 }
 .modal-about {
   color: #757575;
@@ -1132,11 +1154,17 @@ html:hover .your__place-text {
 .modal-input {
   position: relative;
   margin-top: 4px;
-  width: 448px;
+  width: 100%;
   padding: 11px 12px 11px 42px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal-input {
+    width: 448px;
+    height: 40px;
+  }
 }
 .modal-input:hover {
   cursor: pointer;
@@ -1153,8 +1181,7 @@ html:hover .your__place-text {
   fill: #2196f3;
 }
 .modal-send {
-  margin: 30px 124px 0 124px;
-  margin-top: 30px;
+  margin: 30px 0 0 20px;
   cursor: pointer;
   padding: 10px 52px;
   color: #FFF;
@@ -1169,8 +1196,18 @@ html:hover .your__place-text {
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 480px) {
+  .modal-send {
+    margin: 30px 0 0 85px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-send {
+    margin: 30px 0 0 124px;
+  }
+}
 
-.review1s-about {
+.reviews-about {
   margin-top: 10px;
   color: #757575;
   font-family: Roboto;
@@ -1181,43 +1218,21 @@ html:hover .your__place-text {
   letter-spacing: 0.12px;
   margin-bottom: 4px;
 }
-.review1s-about-comment {
-  width: 448px;
-  height: 120px;
-  padding: 12px 16px 96px 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  resize: none;
-}
-.review1s-about-comment::-moz-placeholder {
-  text-align: start;
-  color: rgba(117, 117, 117, 0.5);
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.12px;
-}
-.review1s-about-comment::placeholder {
-  text-align: start;
-  color: rgba(117, 117, 117, 0.5);
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.12px;
-}
 
 textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
-  padding: 12px 16px 96px 16px;
+  padding: 12px 0 0 16px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  textarea {
+    width: 448px;
+    height: 120px;
+  }
 }
 
 textarea:hover {
@@ -1225,32 +1240,66 @@ textarea:hover {
   border: 1px solid #2196f3;
 }
 
-.agreement__box {
-  display: flex;
-  justify-content: center;
-  gap: 8.38px;
-  justify-content: center;
+@media screen and (min-width: 320px) {
+  .agreement {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 8.38px;
+  }
 }
-.agreement__box__text {
+@media screen and (min-width: 1200px) {
+  .agreement {
+    margin-top: 25px;
+  }
+}
+.agreement__title {
+  margin-top: 5px;
+}
+@media screen and (min-width: 480px) {
+  .agreement__title {
+    margin-top: 0;
+  }
+}
+.agreement__text {
   color: #757575;
   font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-align: center;
 }
-.agreement__box__link {
-  cursor: pointer;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  color: #2196f3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-decoration-line: underline;
+@media screen and (min-width: 320px) {
+  .agreement__text {
+    line-height: 24px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .agreement__text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .agreement__link {
+    cursor: pointer;
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .agreement__link {
+    font-size: 14px;
+  }
+}
+
+.agreement-title {
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */
