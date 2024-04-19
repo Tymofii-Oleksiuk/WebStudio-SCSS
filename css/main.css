@@ -302,6 +302,120 @@ html:hover .your__place-text {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile {
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 320px) {
+  .mobile {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 48px 15px 48px 40px;
+  }
+}
+.mobile__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+.mobile__close-svg {
+  width: 40px;
+  height: 40px;
+}
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.mobile__text {
+  width: -moz-max-content;
+  width: max-content;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__item:hover .mobile__text {
+  color: #2196f3;
+}
+.mobile__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 306px;
+  margin-bottom: 64px;
+}
+.mobile__contacts-phone {
+  width: -moz-max-content;
+  width: max-content;
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.mobile__contacts-email {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.mobile__networks-list {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.mobile__network-item {
+  position: relative;
+}
+.mobile .networks-text {
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+}
+.mobile__network-item::after {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  display: flex;
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  content: "";
+}
+
+.is-open {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.js-menu-container.is-open {
+  transform: translate(100%);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .service {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-service.jpg);
   display: flex;
