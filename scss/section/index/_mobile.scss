@@ -1,14 +1,25 @@
 .mobile {
-    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+
+    @media screen and (min-width:320px) {
+        overflow: hidden;
+        transform: translateX(0%);
+        display: flex;
+        flex-direction: column;
+        transition: transform 1s, visibility 1s;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    @media screen and (min-width:480px) {}
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
 
     @media screen and (min-width: 320px) {
         max-width: 450px;
@@ -117,6 +128,5 @@
 }
 
 .js-menu-container.is-open {
-    transform: translate(100%);
-    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(150%);
 }

@@ -32,9 +32,12 @@
             <nav class="header__nav">
                 <a class="animate__animated animate__backInLeft  logo" href="">Web<span
                         class="logo__black">Studio</span></a>
-                <svg class="header-icon-menu js-open-menu">
+                <div class="burger js-open-menu">
+                    <span class="burger-span"></span>
+                </div>
+                <!-- <svg class="header-icon-menu js-open-menu">
                     <use href="./img/symbol-defs.svg#header-icon"></use>
-                </svg>
+                </svg> -->
                 <div class="header__box">
                     <ul class="animate__backInDown animate__animated header__menu">
                         <li class="menu-item">
@@ -69,11 +72,11 @@
             </nav>
         </div>
         <section class="mobile js-menu-container is-open">
-            <div class="mobile__close js-close-menu">
+            <!-- <div class="mobile__close js-close-menu">
                 <svg class="mobile__close-svg">
                     <use href="./img/symbol-defs.svg#icon-close-black"></use>
                 </svg>
-            </div>
+            </div> -->
             <ul class="mobile__list">
                 <li class="mobile__item">
                     <a class="mobile__link">
@@ -525,15 +528,22 @@
         </div>
     </div> -->
 
-    <script src="./js/modal.js"></script>
+        <script src="./js/modal.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
+        <script>
+            AOS.init();
+        </script>
 
-    <script src="./js/mobile-menu-workshop.js"></script>
+        <script src="./js/mobile-menu-workshop.js"></script>
+
+        <script>
+            document.querySelector('.burger').addEventListener('click', function () {
+                this.classList.toggle('active');
+                document.querySelector('.nav').classList.toggle('open');
+            })
+        </script>
 
 </body>
 
