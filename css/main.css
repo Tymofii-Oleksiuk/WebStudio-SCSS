@@ -48,10 +48,6 @@ main {
   overflow: hidden;
 }
 
-html {
-  overflow: hidden;
-}
-
 .container {
   padding: 0 15px;
   max-width: 320px;
@@ -376,7 +372,6 @@ html:hover .your__place-text {
 }
 @media screen and (min-width: 320px) {
   .mobile {
-    max-width: 450px;
     margin: 0 auto;
     padding: 48px 15px 48px 40px;
   }

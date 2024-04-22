@@ -48,10 +48,6 @@ main {
   overflow: hidden;
 }
 
-html {
-  overflow: hidden;
-}
-
 .container {
   padding: 0 15px;
   max-width: 320px;
