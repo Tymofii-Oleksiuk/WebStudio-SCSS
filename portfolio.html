@@ -32,9 +32,9 @@
             <nav class="header__nav">
                 <a class="animate__animated animate__backInLeft  logo" href="">Web<span
                         class="logo__black">Studio</span></a>
-                <svg class="header-icon-menu">
-                    <use href="./img/symbol-defs.svg#header-icon"></use>
-                </svg>
+                <div class="burger js-open-menu">
+                    <span class="burger-span"></span>
+                </div>
                 <div class="header__box">
                     <ul class="animate__backInDown animate__animated header__menu">
                         <li class="menu-item">
@@ -47,7 +47,7 @@
                             <a class="header__text" href="">Контакти</a>
                         </li>
                     </ul>
-                    <zul class="animate__backInRight animate__animated header__info">
+                    <ul class="animate__backInRight animate__animated header__info">
                         <li class="info__item">
                             <a class="header__link" href="mailto:info@devstudio.com">
                                 <svg class="header__icon">
@@ -58,13 +58,13 @@
                         </li>
                         <li class="info__item">
                             <a class="header__link" href="mailto:info@devstudio.com">
-                                <svg class="header__icon">
+                                <svg class="header__icon-2">
                                     <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                                 </svg>
                                 <p class="header__contacts" href="tel:+380961111111">+38 096 111 11 11</p>
                             </a>
                         </li>
-                        </ul>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -300,6 +300,78 @@
             </div>
         </div>
     </footer>
+
+    <div class="mobile js-menu-container is-open">
+        <div>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a href="./index.html" class="mobile__link">
+                        <p class="mobile__text">Студія</p>
+                    </a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link">
+                        <p class="mobile__text your__place-text">Портфоліо</p>
+                    </a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link">
+                        <p class="mobile__text">Контакти</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="mobile__contacts">
+                <li class="mobile__contacts-item">
+                    <a href="#" class="mobile__contacts-link">
+                        <p class="mobile__contacts-phone">+38 096 111 11 11</p>
+                    </a>
+                </li>
+                <li class="mobile__contacts-item">
+                    <a href="#" class="mobile__contacts-link">
+                        <p class="mobile__contacts-email">info@devstudio.com</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile__networks-list">
+                <li class="mobile__network-item">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">Instagram</p>
+                    </a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">Twitter</p>
+                    </a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">Facebook</p>
+                    </a>
+                </li>
+                <li class="mobile__network-item-1s">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">LinkedIn</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./js/mobile-menu-workshop.js"></script>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+
 </body>
 
 </html>

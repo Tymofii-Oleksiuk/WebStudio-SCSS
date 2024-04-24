@@ -1,19 +1,16 @@
 .mobile {
     @media screen and (min-width:320px) {
-        overflow: hidden;
-        transform: translateX(0%);
+        z-index: 49;
         display: flex;
         flex-direction: column;
         transition: transform 1s, visibility 1s;
         background-color: white;
-        position: absolute;
-        width: 100%;
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;
+        bottom: 0;
     }
-
-    @media screen and (min-width:480px) {}
 
     @media screen and (min-width:768px) {
         display: none;
@@ -65,7 +62,6 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        margin-top: 306px;
         margin-bottom: 64px;
     }
 

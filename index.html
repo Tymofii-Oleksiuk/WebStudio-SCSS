@@ -32,7 +32,7 @@
             <nav class="header__nav">
                 <a class="animate__animated animate__backInLeft  logo" href="">Web<span
                         class="logo__black">Studio</span></a>
-                <div class="burger js-open-menu">
+                <div class="animate__backInRight animate__animated burger js-open-menu">
                     <span class="burger-span"></span>
                 </div>
                 <div class="header__box">
@@ -68,62 +68,6 @@
                 </div>
             </nav>
         </div>
-        <section class="mobile js-menu-container is-open">
-            <ul class="mobile__list">
-                <li class="mobile__item">
-                    <a class="mobile__link">
-                        <p class="mobile__text your__place-text">Студія</p>
-                    </a>
-                </li>
-                <li class="mobile__item">
-                    <a class="mobile__link">
-                        <p class="mobile__text">Портфоліо</p>
-                    </a>
-                </li>
-                <li class="mobile__item">
-                    <a class="mobile__link">
-                        <p class="mobile__text">Контакти</p>
-                    </a>
-                </li>
-            </ul>
-            <ul class="mobile__contacts">
-                <li class="mobile__contacts-item">
-                    <a href="#" class="mobile__contacts-link">
-                        <p class="mobile__contacts-phone">+38 096 111 11 11</p>
-                    </a>
-                </li>
-                <li class="mobile__contacts-item">
-                    <a href="#" class="mobile__contacts-link">
-                        <p class="mobile__contacts-email">info@devstudio.com</p>
-                    </a>
-                </li>
-            </ul>
-            <ul class="mobile__networks-list">
-                <li class="mobile__network-item">
-                    <a href="#" class="mobile__networks-link">
-                        <p class="networks-text">Instagram</p>
-                    </a>
-                </li>
-                <li class="mobile__network-item">
-                    <a href="#" class="mobile__networks-link">
-                        <p class="networks-text">Twitter</p>
-                    </a>
-                </li>
-                <li class="mobile__network-item">
-                    <a href="#" class="mobile__networks-link">
-                        <p class="networks-text">Facebook</p>
-                    </a>
-                </li>
-                <li class="mobile__network-item-1s">
-                    <a href="#" class="mobile__networks-link">
-                        <p class="networks-text">LinkedIn</p>
-                    </a>
-                </li>
-            </ul>
-
-
-        </section>
-
     </header>
     <main>
         <section class="service">
@@ -520,22 +464,81 @@
         </div>
     </div>
 
-        <script src="./js/modal.js"></script>
+    <div class="mobile js-menu-container is-open">
+        <div>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a  href="./index.html" class="mobile__link">
+                        <p class="mobile__text your__place-text">Студія</p>
+                    </a>
+                </li>
+                <li class="mobile__item">
+                    <a href="./portfolio.html" class="mobile__link">
+                        <p class="mobile__text">Портфоліо</p>
+                    </a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link">
+                        <p class="mobile__text">Контакти</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="mobile__contacts">
+                <li class="mobile__contacts-item">
+                    <a href="#" class="mobile__contacts-link">
+                        <p class="mobile__contacts-phone">+38 096 111 11 11</p>
+                    </a>
+                </li>
+                <li class="mobile__contacts-item">
+                    <a href="#" class="mobile__contacts-link">
+                        <p class="mobile__contacts-email">info@devstudio.com</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile__networks-list">
+                <li class="mobile__network-item">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">Instagram</p>
+                    </a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">Twitter</p>
+                    </a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">Facebook</p>
+                    </a>
+                </li>
+                <li class="mobile__network-item-1s">
+                    <a href="#" class="mobile__networks-link">
+                        <p class="networks-text">LinkedIn</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script>
-            AOS.init();
-        </script>
+    <script src="./js/modal.js"></script>
 
-        <script src="./js/mobile-menu-workshop.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script>
-            document.querySelector('.burger').addEventListener('click', function () {
-                this.classList.toggle('active');
-                document.querySelector('.nav').classList.toggle('open');
-            })
-        </script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./js/mobile-menu-workshop.js"></script>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
 
 </body>
 
