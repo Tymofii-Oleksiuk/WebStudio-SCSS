@@ -356,6 +356,7 @@ html:hover .your__place-text {
     z-index: 49;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     transition: transform 1s, visibility 1s;
     background-color: white;
     position: fixed;
