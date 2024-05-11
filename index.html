@@ -122,19 +122,34 @@
                 <h2 class="occupation__title">Чим ми займаємося</h2>
                 <ul class="occupation__list">
                     <li class="occupation__item">
-                        <img class="occupation__img" src="./img/keyboard.png" alt="keyboard">
+                        <!-- <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/.webp 1x, ./img/desktop/.webp 2x">
+                        </picture> -->
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/desktop/keyboard-desktop@1x.webp 1x, ./img/desktop/keyboard-desktop@2x.webp 2x">
+                            <img class="occupation__img" src="./img/keyboard.png" alt="keyboard">
+                        </picture>
                         <div class="occupation__box">
                             <p class="occupation__name">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="occupation__item">
-                        <img class="occupation__img" src="./img/computer.png" alt="computer">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/desktop/phone-desktop@1x.webp 1x, ./img/desktop/phone-desktop@2x.webp 2x">
+                            <img class="occupation__img" src="./img/phone.png" alt="phone">
+                        </picture>
                         <div class="occupation__box">
                             <p class="occupation__name">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="occupation__item">
-                        <img class="occupation__img" src="./img/phone.png" alt="phone">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/desktop/computer-desktop@1x.webp 1x, ./img/desktop/computer-desktop@2x.webp 2x">
+                            <img class="occupation__img" src="./img/computer.png" alt="computer">
+                        </picture>
                         <div class="occupation__box">
                             <p class="occupation__name">Дизайнерські рішення</p>
                         </div>
@@ -148,7 +163,14 @@
                 <ul class="command__list">
                     <li class="command__item">
                         <article class="command__article">
-                            <img class="command__img" src="./img/boy4.jpg" alt="boy1">
+
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/desktop/boy4-desktop@1x.webp 1x, ./img/desktop/boy4-desktop@2x.webp 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/tablet/boy4-tablet@1x.webp 1x, ./img/tablet/boy4-tablet@2x.webp 2x">
+                                <img class="command__img" src="./img/boy4.jpg" alt="boy1">
+                            </picture>
                             <h3 class="command__name">Ігор Дем'яненко</h3>
                             <p class="command__discription">Product Designer</p>
                             <ul class="icons__list">
@@ -186,7 +208,13 @@
                     </li>
                     <li class="command__item">
                         <article class="command__article">
-                            <img class="command__img" src="./img/boy3.jpg" alt="boy1">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/desktop/boy3-desktop@1x.webp 1x, ./img/desktop/boy3-desktop@2x.webp 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/tablet/boy3-tablet@1x.webp 1x, ./img/tablet/boy3-tablet@2x.webp 2x">
+                                <img class="command__img" src="./img/boy3.jpg" alt="boy1">
+                            </picture>
                             <h3 class="command__name">Ольга Рєпіна</h3>
                             <p class="command__discription">Frontend Developer</p>
                             <ul class="icons__list">
@@ -224,7 +252,13 @@
                     </li>
                     <li class="command__item">
                         <article class="command__article">
-                            <img class="command__img" src="./img/boy1.jpg" alt="boy1">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/desktop/boy-desktop@1x.webp 1x, ./img/desktop/boy-desktop@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./img/desktop/boy-desktop@1x.webp 1x, ./img/desktop/boy-desktop@2x.webp 2x">
+                                <img class="command__img" src="./img/boy1.jpg" alt="boy1">
+                            </picture>
                             <h3 class="command__name">Микола Тарасов</h3>
                             <p class="command__discription">Marketing</p>
                             <ul class="icons__list">
@@ -262,7 +296,13 @@
                     </li>
                     <li class="command__item">
                         <article class="command__article">
-                            <img class="command__img" src="./img/boy2.jpg" alt="boy1">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/desktop/boy2-desktop@1x.webp 1x, ./img/desktop/boy2-desktop@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./img/tablet/boy-tablet@1x.webp 1x, ./img/tablet/boy-tablet@2x.webp 2x">
+                                <img class="command__img" src="./img/boy2.jpg" alt="boy1">
+                            </picture>
                             <h3 class="command__name">Михайло Єрмаков</h3>
                             <p class="command__discription">UI Designer</p>
                             <ul class="icons__list">
@@ -468,7 +508,7 @@
         <div>
             <ul class="mobile__list">
                 <li class="mobile__item">
-                    <a  href="./index.html" class="mobile__link">
+                    <a href="./index.html" class="mobile__link">
                         <p class="mobile__text your__place-text">Студія</p>
                     </a>
                 </li>
