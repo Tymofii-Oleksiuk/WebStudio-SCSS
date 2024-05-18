@@ -119,11 +119,22 @@
     top: 0;
     left: 0;
     position: absolute;
-    width: 370px;
     height: 294px;
     background: rgba(33, 150, 243, 0.90);
     transform: translatey(100%);
     transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width: 480px) {
+        padding: 77px 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }
 }
 
 

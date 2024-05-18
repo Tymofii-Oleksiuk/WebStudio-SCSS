@@ -648,11 +648,25 @@ html:hover .your__place-text {
   top: 0;
   left: 0;
   position: absolute;
-  width: 370px;
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 480px) {
+  .overlay {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
 }
 
 .overlay__text {
