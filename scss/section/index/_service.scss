@@ -7,21 +7,35 @@
     padding: 118px 0;
 
 
-    background-image: url(/img/desktop/background-service-decktop@1x.webp);
+    background-image: url(/img/mobile/back-mobile@1x.webp);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(/img/desktop/background-service-decktop@2x.webp);
+        background-image: url(/img/mobile/back-mobile@2x.webp);
     }
 
 
     @media screen and (min-width: 768px) {
         padding: 117px 0;
+        background-image: url(/img/tablet/back-tablet@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/img/tablet/back-tablet@2x.webp);
+        }
     }
 
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
+        background-image: url(/img/desktop/background-service-decktop@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/img/desktop/background-service-decktop@2x.webp);
+        }
     }
 
     &__box {
