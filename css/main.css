@@ -477,21 +477,33 @@ html:hover .your__place-text {
   background-position: center;
   background-size: cover;
   padding: 118px 0;
-  background-image: url(/img/desktop/background-service-decktop@1x.webp);
+  background-image: url(../img/desktop/background-service-decktop@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .service {
-    background-image: url(/img/desktop/background-service-decktop@2x.webp);
+    background-image: url(../img/desktop/background-service-decktop@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .service {
     padding: 117px 0;
+    background-image: url(../img/tablet/back-tablet@1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: url(../img/tablet/back-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .service {
     padding: 200px 0;
+    background-image: url(../img/mobile/back-mobile@1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: url(../img/mobile/back-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 480px) {
